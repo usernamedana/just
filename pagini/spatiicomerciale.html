@@ -8,13 +8,16 @@
   <link rel="stylesheet" href="../css/style.css" />
   <script type="text/javascript" src="../script/script.js"></script>
   <script type="text/javascript" src="../script/carosel.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <script src="js/script.js"></script>
 </head>
 
 <header class="meniu">
-  <img class="logo-ul" src="../imagini/logo.png" alt="Homeverse logo" />
+  <a href="../index.html#acasa"><img class="logo-ul" src="../imagini/logo.png" alt="Logo-ul" /></a>
   <nav class="BaraDeNavigare">
     <a href="../index.html#acasa" class="link-navigare">Acasa</a>
     <a href="../index.html#oferte" class="link-navigare">Oferte</a>
@@ -22,6 +25,7 @@
     <a href="../index.html#servicii" class="link-navigare">Servicii</a>
     <a href="../index.html#contacte" class="link-navigare">Contacte</a>
   </nav>
+  <i id="hamburger" onclick="mobileMenu()" class="fas fa-bars"></i>
 </header>
 
 <section class="oferte" id="oferte">
@@ -38,7 +42,7 @@
 
     <div class="sectiune-spatiicomerciale">
       <div class="pop-up-js">
-        <button class="exit-js" onclick="popUp(0)">&#x2718;</button>
+        <button class="exit-js" onclick="popUp(0)"><i class='bx bxs-x-circle'></i>></button>
         <div class="pop-up-photos">
           <img class="pop-up-img-1" src="" alt="1" onclick="openPlayer(1)">
           <img class="pop-up-img-2" src="" alt="2" onclick="openPlayer(2)">

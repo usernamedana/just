@@ -282,7 +282,7 @@ nav a {
 }
 
 .opt-text:is(:hover, :focus) {
-    color:hsl(222, 36.04%, 43.53%);
+    color: hsl(222, 36.04%, 43.53%);
 }
 
 
@@ -481,7 +481,7 @@ nav a {
     border: solid black;
     border-width: 0 10px 10px 0;
     display: inline-block;
-    padding: 10px;
+    padding: 7px;
     margin: 0 40px;
     cursor: pointer;
 }
@@ -505,30 +505,30 @@ nav a {
     flex-direction: column;
     align-items: center;
     width: 70%;
-    background-color: rgba(39, 37, 37, 0.97);
+    background-color: rgb(246, 246, 246);
     top: 0;
     left: 15%;
     z-index: 1000;
     padding: 1% 0;
     border-radius: 1.5vh;
+    border: 5px solid hsl(200, 15%, 43%);
 }
 
 .exit-js {
     position: absolute;
-    font-size: 30px;
-    right: 2.5vh;
-    top: 2.5vh;
+    font-size: 45px;
+    right: 2vh;
+    top: 2vh;
     transition: 0.5s;
-    padding: 0 1vh;
-    background-color: white;
-    border-radius: 4vh;
+    color: rgb(0, 0, 0);
 }
+
 
 .exit-js:hover {
     transition: 0.5s;
-    color: white;
-    background-color: black;
+    color: rgba(255, 255, 255);
 }
+
 
 .pop-up-photos {
     display: flex;
@@ -563,12 +563,14 @@ nav a {
 
 .main-txt-js {
     font-size: 22px;
+    color: hsl(0, 0%, 0%);
 }
 
 .date-js {
     font-size: 16px;
     text-align: left;
     padding-top: 10px;
+    color: hsl(200, 15%, 43%);
 }
 
 .pop-up-bottom-right {
@@ -585,11 +587,13 @@ nav a {
 .price-js {
     font-size: 25px;
     font-weight: 900;
+    color: hsl(222, 36.04%, 43.53%);
 }
 
 .adresa-js {
     font-size: 20px;
     font-weight: 600;
+    color: hsl(200, 15%, 43%);
 }
 
 .pop-up-contact-js {
@@ -597,15 +601,15 @@ nav a {
     font-weight: 900;
     padding: 1vh 2vh;
     margin-top: 1vh;
-    background-color: white;
-    color: black;
+    background-color: hsl(222, 36.04%, 43.53%);
+    color: rgb(255, 251, 251);
     border-radius: 1.5vh;
     transition: 0.5s;
 }
 
 .pop-up-contact-js:hover {
     transition: 0.5s;
-    background-color: black;
+    background-color: hsl(200, 15%, 43%);
     color: white;
 }
 
@@ -918,13 +922,13 @@ form {
 }
 
 
- @media (max-width: 760px) {
+@media (max-width: 760px) {
 
-   .logo-ul{
-    width: 12%;
-    height: 12%;
-   }
-     
+    .logo-ul {
+        width: 32%;
+        height: 100%;
+    }
+
     .meniu {
         padding: 5px 0px;
     }
@@ -958,28 +962,37 @@ form {
         top: 10px;
     }
 
-    .Acasa, .despre-noi, .servicii, .contacte {
+    .Acasa,
+    .despre-noi,
+    .servicii,
+    .contacte {
         display: block;
-    }  
+    }
 
-    .sectiune{
+    .sectiune {
         display: block;
         padding-inline: 10px;
     }
 
-    .img-casa, .despre-noi-img img {
+    .img-casa,
+    .despre-noi-img img {
         width: 100%;
-        margin: 0px ;
+        margin: 0px;
         object-fit: cover;
     }
 
     .mapa iframe {
-        width: 100%;
+        width: 105%;
+    }
+
+    .contacte .sectiune .mapa {
+        padding-inline: 0px;
     }
 
     .Acasa-titlu {
-        font-size: 200%;
+        font-size: 165%;
         text-align: center;
+        margin-top: -32px;
     }
 
     .Acasa-continut {
@@ -1019,6 +1032,10 @@ form {
         height: auto;
     }
 
+    .despre-noi {
+        padding-block: 0px;
+    }
+
     .despre-noi .sectiune-subtitlu {
         margin-top: 15px;
     }
@@ -1028,7 +1045,7 @@ form {
         padding: 20px 15px;
     }
 
-    .apel-la-actiune-buton{
+    .apel-la-actiune-buton {
         margin-top: 10px;
         margin-bottom: 5px;
     }
@@ -1036,5 +1053,66 @@ form {
     .opt-continut {
         text-align: center;
     }
-    
- }
+
+    .elemente {
+        margin: 10px;
+    }
+
+    .sectiune-titlu {
+        font-size: 165%;
+    }
+
+    .sectiune .oferte {
+        padding-inline: 0px;
+    }
+
+    .oferte-lista-terenuri {
+        display: block;
+    }
+
+    .oferte-opt .oferte-img img {
+        width: 250px;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .oferte-opt:hover .oferte-img img {
+        transform: none;
+    }
+
+    .oferte-opt .oferte-img::before {
+        background: none;
+
+    }
+
+    .oferte-opt {
+        margin-left: 10px;
+    }
+
+    .carosel {
+        width: 80%;
+    }
+
+    .contacte-link-box {
+        text-align: center;
+    }
+
+    .contacte .sectiune-text {
+        margin: 12px 0px;
+    }
+
+    .sectiune-apartamente,
+    .sectiune-case,
+    .sectiune-terenuri,
+    .sectiune-spatiicomerciale {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .oferte, .servicii .sectiune-titlu {
+        margin-bottom: 20px;
+    }
+
+    .optiuni-pagini{
+        margin-bottom: 0px;
+    }
+}
